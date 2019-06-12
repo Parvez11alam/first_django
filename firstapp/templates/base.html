@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>{% block 'title' %}
+    parvez {% endblock %}</title>
+    {% load static %}
+    <<link rel="stylesheet" href="{% static 'css/first.css'%}">
+  </head>
+  <body>
+    <<header>
+      something
+    </header>
+    <<div class="sidebar">
+      +
+    </div>
+    { %block 'body'%}
+    title of the base
+    { % endblock % }
+  </body>
+</html>

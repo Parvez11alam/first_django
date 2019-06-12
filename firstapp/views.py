@@ -15,3 +15,7 @@ def home(request, id):
         context.update({'name':'parvez'})'''
 
     return render(request, 'home.html')
+def home2(request):
+    return render(request, 'home2.html')
+def base(request):
+    return render(request, 'base.html')

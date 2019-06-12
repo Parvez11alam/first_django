@@ -1,0 +1,26 @@
+
+{% extends 'base.html' %}
+{% block 'title' %}
+Home|parvez
+{% endblock %}
+
+{% block 'body' %}
+  <h2> Hi to the world {{name}}</h2>
+  <!--  <ol>
+    {% for i in value%}
+    <li>{{i}}</li>
+    {% endfor %}
+  <!-- {{ value }} <ol>-->
+  <h2>hello
+    {% if name %}
+    {{name}}
+    {% else %}
+    your name here
+    {% endif %}
+  <form method="POST">
+    {% csrf_token %}
+    <input type='text' name='name'>
+    <input type='submit'>
+
+  </form>
+{% endblock %}  
